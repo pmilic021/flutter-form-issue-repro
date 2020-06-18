@@ -25,7 +25,7 @@ void main() {
     // we see that it was indeed tapped
     expect(find.text('aaa'), findsNWidgets(2));
 
-    // this is wrong, it should find no widgets
-    expect(find.text('Required'), findsOneWidget);
+    // this should pass, since it should find no widgets
+    expect(find.text('Required'), findsNothing);
   });
 }
